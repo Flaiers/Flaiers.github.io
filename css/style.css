@@ -1,0 +1,112 @@
+html,
+body {
+  background-color: black;
+  font-size: 16pt;
+}
+
+.main {
+  font-family: "Roboto Mono", monospace;
+  font-size: 16pt;
+  color: #00f93e;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+a {
+  color: #00f936;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+svg,
+img {
+  width: 28px;
+  height: 28px;
+  position: relative;
+  top: 7px;
+  right: -5px;
+  fill: #00f936;
+}
+
+.blinking {
+  animation: blinkingText 1.2s infinite;
+}
+@keyframes blinkingText {
+  0% {
+    color: #000;
+  }
+  75% {
+    color: transparent;
+  }
+}
+
+.typewriter h1 {
+  overflow: hidden;
+  border-right: 0.15em solid #00f936;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  font-family: "Roboto Mono", monospace;
+  font-size: 16pt;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #00f936;
+  }
+}
+
+.css-typing p {
+  border-right: 0.15em solid #00f936;
+  font-family: "Roboto Mono", monospace;
+  font-size: 16pt;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.css-typing p:nth-child(1) {
+  font-family: "Roboto Mono", monospace;
+  font-size: 16pt;
+  animation: type 2s steps(40, end);
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: 0.15em solid #00f936;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
